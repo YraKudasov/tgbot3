@@ -90,9 +90,9 @@ def process_new_string(message):
     btn1 = types.InlineKeyboardButton('Все ключевые элементы выделены верно', callback_data='sendToDepartment')
     markup.row(btn1)
     btn8 = types.InlineKeyboardButton('❌ Гр. тем', callback_data='changeGroups') # commit_7
-    btn3 = types.InlineKeyboardButton('❌ Тему', callback_data='changeTheme')
+    btn9 = types.InlineKeyboardButton('❌ Тему', callback_data='changeTheme') # commit_8
     btn4 = types.InlineKeyboardButton('❌ Исп. орг.', callback_data='changeDepartment')
-    markup.row(btn8, btn3, btn4) # commit_7
+    markup.row(btn8, btn9, btn4) # commit_7  # commit_8
     bot.send_message(message.chat.id, f'В вашем запросе были выделены следующие ключевые элементы:\n\n'
                                       f'Группа тем - <b>Памятники и объекты культурного наследия</b>\n'
                                       f'Тема - <b>Памятники и объекты культурного наследия</b>\n'
