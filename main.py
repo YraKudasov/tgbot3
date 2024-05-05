@@ -10,7 +10,7 @@ def newChat(message):
                      f'Здравствуйте, наш дорогой клиент.\nС каким <b><u>социальным вопросом</u></b> вам необходимо помочь?',parse_mode='HTML')
 
 
-@bot.message_handler(commands=['help'])
+@bot.message_handler(commands=['support']) # commit_6
 def helpCommand(message):
     bot.send_message(message.chat.id, f'<b>Dvora</b> может помочь вам с решением разного рода социальных вопросов.\n\n'
                                       f'<b>Доступные команды:</b>\n'
