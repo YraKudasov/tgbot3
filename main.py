@@ -27,9 +27,9 @@ def helpCommand(message):
 @bot.message_handler(commands=['areas']) # commit_4
 def spheresCommand(message):
     bot.send_message(message.chat.id, f'<b>Сферы, в которых бот может вам помочь:</b>\n\n'
-                                      f'<em>Безопасность</em>\n'
-                                      f'<em>Благоустройство</em>\n'
-                                      f'<em>Газ и топливо</em>\n'
+                                      f'<b>Безопасность</b>\n' # commit_9
+                                      f'<b>Благоустройство</b>\n' # commit_9
+                                      f'<b>Газ и топливо</b>\n'  # commit_9
                                       f'<em>Благоустройство</em>\n'
                                       f'<em>Государственная собственность</em>\n'
                                       f'<em>Дороги</em>\n'
