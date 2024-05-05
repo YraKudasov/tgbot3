@@ -87,8 +87,8 @@ def callback_message(callback):
 
 def process_new_string(message):
     markup = types.InlineKeyboardMarkup()
-    btn1 = types.InlineKeyboardButton('Все ключевые элементы выделены верно', callback_data='sendToDepartment')
-    markup.row(btn1)
+    btn10 = types.InlineKeyboardButton('Все ключевые элементы выделены верно', callback_data='sendToDepartment') # commit_11
+    markup.row(btn10) # commit_11
     btn8 = types.InlineKeyboardButton('❌ Гр. тем', callback_data='changeGroups') # commit_7
     btn9 = types.InlineKeyboardButton('❌ Тему', callback_data='changeTheme') # commit_8
     btn4 = types.InlineKeyboardButton('❌ Исп. орг.', callback_data='changeDepartment')
