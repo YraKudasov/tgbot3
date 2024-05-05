@@ -64,9 +64,9 @@ def answerQuestion(message):
     btn5 = types.InlineKeyboardButton('Все ключевые элементы выделены верно', callback_data='sendToDepartment')  # commit_2
     markup.row(btn5)                                                                                             # commit_2
     btn6 = types.InlineKeyboardButton('❌ Гр. тем', callback_data='changeGroups')                               # commit_3
-    btn3 = types.InlineKeyboardButton('❌ Тему', callback_data='changeTheme')
+    btn7 = types.InlineKeyboardButton('❌ Тему', callback_data='changeTheme')                                   # commit_5
     btn4 = types.InlineKeyboardButton('❌ Исп. орг.', callback_data='changeDepartment')
-    markup.row(btn6, btn3, btn4)                                                                                # commit_3
+    markup.row(btn6, btn7, btn4)                                                                                # commit_3 # commit_5
     bot.send_message(message.chat.id, 'Подождите пожалуйста, ваш запрос обрабатывается...')
     bot.send_message(message.chat.id, f'В вашем запросе были выделены следующие ключевые элементы:\n\n'
                                       f'Группа тем - <b>Строительство и архитектура</b>\n'
