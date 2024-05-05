@@ -16,7 +16,7 @@ def helpCommand(message):
                                       f'<b>Доступные команды:</b>\n'
                                       f'/start - начало работы с ботом\n'
                                       f'/help - помощь по боту\n'
-                                      f'/spheres - сферы, с которыми работает бот\n\n'
+                                      f'/areas - сферы, с которыми работает бот\n\n' # commit_4
                                       f'<b>ИНСТРУКЦИЯ ПО ИСПОЛЬЗОВАНИЮ DVORA:</b>\n'
                                       f'1) Введите свой социальный вопрос, с которым вам нужно помочь.'
                                       f'**Для более точного определения проблемы укажите ваш <b>город</b> и <b>адрес</b>(при необходимости)**\n\n'
@@ -24,7 +24,7 @@ def helpCommand(message):
                                       f'3) Далее, Drova отправит запрос в отделение, ответственное за решение данного вопроса.', parse_mode='HTML')
 
 
-@bot.message_handler(commands=['spheres'])
+@bot.message_handler(commands=['areas']) # commit_4
 def spheresCommand(message):
     bot.send_message(message.chat.id, f'<b>Сферы, в которых бот может вам помочь:</b>\n\n'
                                       f'<em>Безопасность</em>\n'
